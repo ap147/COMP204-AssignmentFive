@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PartOne</string>
+    <string name="app_name">Part One</string>
+    <string name="edit_message">Amarjot Parmar (1255668)</string>
+    <string name="button_send">Send</string>
 </resources>
