@@ -77,7 +77,7 @@ Task 2
   * Add your screenshots below
 
 
-Task 1 Screenshots
+Task 2 Screenshots
 ------------------
 
 Your screenshots here
