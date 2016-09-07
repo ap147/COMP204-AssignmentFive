@@ -16,6 +16,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_Message);
         TextView textView = new TextView(this);
+        //Setting TextSize and the message that was in EditField
         textView.setTextSize(40);
         textView.setText(message);
 
