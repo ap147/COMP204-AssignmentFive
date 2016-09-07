@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity  {
 
         //Creating Toast Button
         final Button ToastB =((Button) findViewById(R.id.button));
+        //Disabling the button since app just started, there will be no input in EditField
+        Log.e("s", "Disable");
+        ToastB.setEnabled(false);
         //Creating the additional three buttons
         Button RedB = ((Button) findViewById(R.id.redButton));
         Button BlueB = ((Button) findViewById(R.id.blueButton));

@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/toast_button"/>
-    
+
     <!-- Setting Text thats displated in button, setting its id and color-->
     <Button
         android:text="Red"
