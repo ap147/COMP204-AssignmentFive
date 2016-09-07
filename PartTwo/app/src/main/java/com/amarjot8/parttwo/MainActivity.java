@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View v) {
                 //Getting input from TextField/EditText
-                String s = ((EditText) findViewById(R.id.edit_message)).getText().toString();//((EditText)findViewById(R.id.edit_message));
+                String s = ((EditText) findViewById(R.id.edit_message)).getText().toString();
                 //Making this toast apear on screen
                 Toast.makeText(MainActivity.this,s, Toast.LENGTH_SHORT).show();
             }
@@ -78,13 +78,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        getWindow().getDecorView().setBackgroundColor(Color.RED);
-        getWindow().getDecorView().setBackgroundColor(Color.BLUE);
+       // getWindow().getDecorView().setBackgroundColor(Color.RED);
+        //getWindow().getDecorView().setBackgroundColor(Color.BLUE);
         getWindow().getDecorView().setBackgroundColor(Color.GREEN);
-        
-        //Getting input from TextField/EditText
-        String s = ((EditText) findViewById(R.id.edit_message)).getText().toString();//((EditText)findViewById(R.id.edit_message));
-        //Making this toast apear on screen
-        Toast.makeText(MainActivity.this,s, Toast.LENGTH_SHORT).show();
+
     }
 }
