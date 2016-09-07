@@ -15,7 +15,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+    protected Button RedB;
+    protected Button BlueB;
+    protected Button GreenB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.e("s", "Disable");
         ToastB.setEnabled(false);
         //Creating the additional three buttons
-        Button RedB = ((Button) findViewById(R.id.redButton));
-        Button BlueB = ((Button) findViewById(R.id.blueButton));
-        Button GreenB = ((Button) findViewById(R.id.greenButton));
+        RedB = ((Button) findViewById(R.id.redButton));
+        BlueB = ((Button) findViewById(R.id.blueButton));
+        GreenB = ((Button) findViewById(R.id.greenButton));
 
         //When button is clicked
         ToastB.setOnClickListener(new View.OnClickListener() {
@@ -44,14 +46,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-
-        RedB.setOnClickListener(this);
-        GreenB.setOnClickListener(this);
-        BlueB.setOnClickListener(this);
-
         ((EditText) findViewById(R.id.edit_message)).addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                //When text is in field
                 if(s.toString().isEmpty())
                 {
                     //SetActive
@@ -62,9 +60,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                //Disable button when editfield is empty
                 if(s.toString().isEmpty())
                 {
-                    //Disable
                     Log.e("s", "Disable");
                     ToastB.setEnabled(false);
                 }
@@ -79,18 +77,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
+        //Depending on what button was pressed
         switch(v.getId())
         {
+            //If Blue pressed, Change background color, Disable it, enable others
             case R.id.blueButton:
                 getWindow().getDecorView().setBackgroundColor(Color.BLUE);
+                BlueB.setEnabled(false);
+                GreenB.setEnabled(true);
+                RedB.setEnabled(true);
                 break;
 
             case R.id.greenButton:
                 getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+                GreenB.setEnabled(false);
+                BlueB.setEnabled(true);
+                RedB.setEnabled(true);
                 break;
 
             case R.id.redButton:
                 getWindow().getDecorView().setBackgroundColor(Color.RED);
+                RedB.setEnabled(false);
+                GreenB.setEnabled(true);
+                BlueB.setEnabled(true);
                 break;
         }
     }
