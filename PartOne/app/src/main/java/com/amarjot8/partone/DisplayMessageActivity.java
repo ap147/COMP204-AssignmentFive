@@ -12,7 +12,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_message);
-
+        //Getting the message and presenting it
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_Message);
         TextView textView = new TextView(this);
