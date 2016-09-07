@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
+    <!-- EditBox, Toast button created-->
     <EditText
         android:id="@+id/edit_message"
         android:layout_width ="match_parent"

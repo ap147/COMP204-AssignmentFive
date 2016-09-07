@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    //Buttons that are used in multiple methods
     protected Button RedB;
     protected Button BlueB;
     protected Button GreenB;
@@ -70,7 +71,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public void afterTextChanged(Editable s) {
-
             }
         });
     }

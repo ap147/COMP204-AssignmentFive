@@ -39,8 +39,8 @@ Task 1
 
 Task 1 Screenshots
 ------------------
-![alt tag](https://puu.sh/r2u1v/972af441b7.jpg)
-![alt tag](https://puu.sh/r2u0Y/b8db6cab36.jpg)
+![alt tag](http://puu.sh/r2Jef/5e721812a4.jpg)
+![alt tag](http://puu.sh/r2Jf9/9a29513d0e.jpg)
 
 
 Task 2
