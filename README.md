@@ -79,8 +79,9 @@ Task 2
 
 Task 2 Screenshots
 ------------------
+![alt tag](https://puu.sh/r2DjR/07434a208b.jpg)
+![alt tag](https://puu.sh/r2DlI/af83542bfa.png)
 
-Your screenshots here
 
 
 Submission
