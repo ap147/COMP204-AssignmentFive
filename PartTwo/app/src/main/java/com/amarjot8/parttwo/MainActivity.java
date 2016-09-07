@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +21,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Creating Toast Button
-        final Button b =((Button) findViewById(R.id.button));
+        final Button ToastB =((Button) findViewById(R.id.button));
+        //Creating the additional three buttons
+        Button RedB = ((Button) findViewById(R.id.redButton));
+        Button BlueB = ((Button) findViewById(R.id.blueButton));
+        Button GreenB = ((Button) findViewById(R.id.greenButton));
+
         //When button is clicked
-        b.setOnClickListener(new View.OnClickListener() {
+        ToastB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Getting input from TextField/EditText
@@ -40,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     //SetActive
                     Log.e("s", "Enable");
-                    b.setEnabled(true);
+                    ToastB.setEnabled(true);
                 }
             }
 
@@ -50,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     //Disable
                     Log.e("s", "Disable");
-                    b.setEnabled(false);
+                    ToastB.setEnabled(false);
                 }
             }
 

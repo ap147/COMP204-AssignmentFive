@@ -17,6 +17,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/toast_button"/>
+    
+    <!-- Setting Text thats displated in button, setting its id and color-->
+    <Button
+        android:text="Red"
+        android:id="@+id/redButton"
+        android:textColor="#ff0000"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:text="Blue"
+        android:id="@+id/blueButton"
+        android:textColor="#0000FF"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:text="Green"
+        android:id="@+id/greenButton"
+        android:textColor="#00FF00"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
 
 
 </LinearLayout>
