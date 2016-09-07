@@ -79,10 +79,10 @@ Task 2
 
 Task 2 Screenshots
 ------------------
-![alt tag](https://puu.sh/r2Ile/8e630a9d47.png)
+![alt tag](https://puu.sh/r2IDD/b0f6773cd1.png)
 ![alt tag](https://puu.sh/r2Itf/560fba85aa.png)
 ![alt tag](https://puu.sh/r2IvX/2bfb910402.png)
-![alt tag](https://puu.sh/r2Ixa/9c4b03970e.png)
+![alt tag](https://puu.sh/r2IC7/95a4e9181e.png)
 
 
 
