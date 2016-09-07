@@ -1,5 +1,7 @@
 package com.amarjot8.parttwo;
-
+//http://stackoverflow.com/questions/25905086/multiple-buttons-onclicklistener-android
+//http://stackoverflow.com/questions/4761686/how-to-set-background-color-of-an-activity-to-white-programmatically
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -11,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,11 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
 
+
+        RedB.setOnClickListener(this);
+        GreenB.setOnClickListener(this);
+        BlueB.setOnClickListener(this);
+
         ((EditText) findViewById(R.id.edit_message)).addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -67,5 +74,17 @@ public class MainActivity extends AppCompatActivity  {
 
             }
         });
+    }
+    @Override
+    public void onClick(View v) {
+
+        getWindow().getDecorView().setBackgroundColor(Color.RED);
+        getWindow().getDecorView().setBackgroundColor(Color.BLUE);
+        getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+        
+        //Getting input from TextField/EditText
+        String s = ((EditText) findViewById(R.id.edit_message)).getText().toString();//((EditText)findViewById(R.id.edit_message));
+        //Making this toast apear on screen
+        Toast.makeText(MainActivity.this,s, Toast.LENGTH_SHORT).show();
     }
 }
