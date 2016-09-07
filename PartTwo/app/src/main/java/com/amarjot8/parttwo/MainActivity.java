@@ -1,6 +1,7 @@
 package com.amarjot8.parttwo;
 //http://stackoverflow.com/questions/25905086/multiple-buttons-onclicklistener-android
 //http://stackoverflow.com/questions/4761686/how-to-set-background-color-of-an-activity-to-white-programmatically
+//http://stackoverflow.com/questions/7873480/android-one-onclick-method-for-multiple-buttons
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -78,9 +79,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-       // getWindow().getDecorView().setBackgroundColor(Color.RED);
-        //getWindow().getDecorView().setBackgroundColor(Color.BLUE);
-        getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+        switch(v.getId())
+        {
+            case R.id.blueButton:
+                getWindow().getDecorView().setBackgroundColor(Color.BLUE);
+                break;
 
+            case R.id.greenButton:
+                getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+                break;
+
+            case R.id.redButton:
+                getWindow().getDecorView().setBackgroundColor(Color.RED);
+                break;
+        }
     }
 }
